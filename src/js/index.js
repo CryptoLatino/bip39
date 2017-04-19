@@ -443,6 +443,13 @@
             },
         },
         {
+            name: "Bitbean",
+            onSelect: function() {
+                network = bitcoin.networks.bitbean;
+                DOM.bip44coin.val(88);
+            },
+        },
+        {
             name: "Litecoin",
             onSelect: function() {
                 network = bitcoin.networks.litecoin;

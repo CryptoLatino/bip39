@@ -82,6 +82,19 @@ bitcoin.networks.bitcoin = {
     feePerKb: 10000,
     estimateFee: estimateFee('testnet')
   };
+  bitcoin.networks.bitbean = {
+    magicPrefix: '\x18BitBean Signed Message:\n',
+    bip32: {
+      public: 0x0488b21e,
+      private: 0x0488ade4
+    },
+    pubKeyHash: 0x3,
+    scriptHash: 0x55,
+    wif: 0x83,
+    dustThreshold: 1,
+    feePerKb: 1000000,
+    estimateFee: estimateFee('bitbean')
+  };
   bitcoin.networks.litecoin = {
     magicPrefix: '\x19Litecoin Signed Message:\n',
     bip32: {
